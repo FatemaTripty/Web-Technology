@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Student Library Form</title>
+
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column; /* Arrange items vertically */
+        }
+
+        figure {
+            margin: 0; /* Remove default margin */
+        }
+
+        figure img {
+            width: 10%;
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Resize image to cover the entire container */
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Form </h1>
+    <div id="container">
+        <figure>
+            <img src="img/365fairytale.jpg" width="200" alt="Image 1">
+            <figcaption>Caption for Image 1</figcaption>
+        </figure>
+        <figure>
+            <img src="img/fairytale.jpg" width="200" alt="Image 2">
+            <figcaption>Caption for Image 2</figcaption>
+        </figure>
+        <figure>
+            <img src="img/grims fairytale.jpg" width="200" alt="Image 3">
+            <figcaption>Caption for Image 3</figcaption>
+        </figure>
+    </div>
+    <h1>Hello Student. Please fill up this form </h1>
+
+    <form method="post">
+        <h3>Student Details :</h3>
+       <p> Name : <input type="text" name = "text" ></p>
+        
+        <p>ID : <input type="number" name = "num1"></p>
+
+          <h4>Gender :</h4>
+
+        <p> Male <input type="radio" name="gender" id="gender"> Female <input type="radio" name="gender" id="gender"> 
+            Others <input type="radio" name="gender" id="gender">  </p>
+        <p>Date of birth : <input type="date" name="date" id="date"> </p>
+        <p> NID No (if available) : <input type="number" name = "num3" ></p>
+        <p>Contact No. : <input type="number" name="num2" > </p>
+         <p> Email : <input type="email" name="email" id="email"> </p>
+
+        <h3>Book request information :</h3>
+        <p>Book Type:
+            <select name="card_type" id="card_type">
+                <option value="">--select a book type--</option>
+                <option value="visa">Fairytale</option>
+                <option value="master_card"> Journal</option>
+                <option value="rupay">Science Fiction</option>
+                <option value="rupay">Nobel</option>
+                <option value="rupay">Literature</option>
+                <option value="rupay">History</option>
+                <option value="rupay">Science Bankground</option>
+                <option value="rupay">Islamic</option>
+            </select>
+        </p>
+        <p> Title of the book requested : <input type="text" name = "text" ></p>
+        <p> Author's name : <input type="text" name = "text" ></p>
+       
+        <p> Preferred format (physical book or e-book) : <input type="text" name = "text" ></p>
+
+        <h4>Purpose of Request :</h4>
+
+        <p> Research <input type="radio" name="gender" id="gender"> Course work <input type="radio" name="gender" id="gender"> 
+            Personal Interest <input type="radio" name="gender" id="gender">  </p>
+
+            <h3>Library Policies and Agreements :</h3> 
+            <p>Borrowing duration : <input type="date" name="date" id="date"> </p>
+            <h4>Late fees and rules:</h4>
+            <p> If you do not return books on time you hhave to give late fees. You will maintain all the 
+                rules and regulation of the the library and use materials properly </p>
+            <p> Are you agree? <input type="checkbox"> </p>
+
+            
+        
+    </form>
+
+</body>
+</html>
